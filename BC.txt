@@ -59,3 +59,47 @@ contract SimpleBank {
         return address(this).balance;
     }
 }
+
+
+
+how to give input:
+after deploy go downside then you can see
+deploy button and all buttons to give input and perform operations
+
+
+
+
+output Explaination
+
+
+The provided output represents an Ethereum transaction that interacts with the `SimpleBank` smart contract. Let's break down the key information in this transaction output:
+
+- `from`: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 - This is the Ethereum address that initiated the transaction.
+
+- `to`: SimpleBank.deposit() 0xd9145CCE52D386f254917e481eB44e9943F39138 - This is the target function within the `SimpleBank` contract that is being called, along with the contract's address.
+
+- `value`: 0 wei - This indicates the amount of Ether (cryptocurrency) transferred with this transaction. In this case, no Ether was sent (0 wei).
+
+- `gas`: 29558 gas - The amount of gas allocated for the transaction. Gas is a measure of computational work required for the transaction.
+
+- `transaction cost`: 25702 gas - The total gas cost for this transaction, including both execution cost and additional costs.
+
+- `execution cost`: 4638 gas - The portion of the gas cost related to executing the contract's functions.
+
+- `input`: 0xd0e...30db0 - This is the input data for the transaction, which typically includes function selectors and parameters for the function call. In this case, it's empty, indicating that the function called may not have required additional input data.
+
+- `decoded input`: {} - There are no additional input parameters provided to the function.
+
+- `decoded output`: {"0": "uint256: 0"} - This indicates the output of the transaction. In this case, it appears to be a response from the `deposit` function, where it returns a `uint256` value of 0.
+
+- `logs`: This section provides information about the events emitted by the contract during the transaction. In this case, the contract emitted a "LogDepositMade" event. The event includes details about the account address (0x5B38Da6a701c568545dCfcB03FcB875f56beddC4) and the deposit amount (0).
+
+- `status`: true - This indicates that the transaction was successfully mined and executed on the Ethereum blockchain.
+
+- `transaction hash`: 0x52c71e6afd6234bb3e9b2b508233ba1a4226e7280db517d4f10b0f7b62b9ee1e - This is the unique identifier (hash) for the transaction.
+
+- `block hash` and `block number`: These represent the block in which the transaction was included.
+
+- `val`: 0 wei - This indicates the value of the transaction in wei (the smallest unit of Ether).
+
+In summary, this transaction represents a deposit interaction with the `SimpleBank` contract, where an account (0x5B38Da6a701c568545dCfcB03FcB875f56beddC4) initiated the deposit operation with a value of 0 wei. The transaction was successfully executed and included in a block on the Ethereum blockchain. The `LogDepositMade` event was emitted by the contract, confirming the deposit action.

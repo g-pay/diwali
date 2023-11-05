@@ -114,3 +114,27 @@ contract StudentRegister {
         return true;
     }
 }
+
+
+how to give input as student data
+after deploy go downside there is register button then fill kthe fields like 
+studentId 101, name Pappu , marks [12,23,45]
+
+
+Output explaination...
+
+The output you've provided corresponds to a transaction where the function `getStudentDetails(uint256)` of the Smart Contract `StudentRegister` was called with `studentId` set to `101`. Here's what each part of the output means:
+
+- `from`: The Ethereum address that initiated the transaction (0x5B38Da6a701c568545dCfcB03FcB875f56beddC4).
+- `to`: The Smart Contract address where the function was called (0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005).
+- `execution cost`: The gas cost for executing the function. In this case, it was 20733 gas.
+- `input`: The input data that was sent with the transaction. It includes the function signature and the parameter values. In this case, it's `getStudentDetails(uint256)` with `studentId` set to 101.
+- `decoded input`: A human-readable representation of the input data, showing the function name and parameter values. It confirms that `studentId` was set to 101.
+- `decoded output`: The output of the function. It includes the student details returned by the function:
+  - "0": The studentId, which is 101.
+  - "1": The student's name, which is "arpit".
+  - "2": An array of uint256, which are the student's marks in three subjects: [50, 89, 98].
+  - "3": The percentage calculated from the marks, which is 158.
+- `logs`: This section is empty because there were no events emitted during the function execution.
+
+It appears that the function successfully retrieved and returned the details of the student with `studentId` 101.
